@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Abdul Abubakar | Portfolio</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+
+</head>
+<a id="home"></a>
+
+<body>
+
+	<div id="navbar">
+		<a id="home" onclick="topFunction()">Home</a>
+		<a href="#projects">Projects</a>
+		<a href="#contact">Contact</a>
+	</div>
+
+
+	<section class="canvas-wrap">
+		<div class="canvas-content">
+
+			<p class="my-info anchor">
+				Hello, I'm Abdul Abubakar <br>
+				I'm a Front End web developer.
+			</p>
+			<a id="btnSeeWork" title="Go to Portfolio" href="#projects">See My Work</a>
+		</div>
+		<div id="canvas" class="gradient"></div>
+
+	</section>
+
+
+	<div class="container">
+
+
+		<section>
+			<div class="projects-info">
+				<h2 id="projects" class="anchor">PROJECTS</h2>
+				<br><br><br><br><br><br><br><br>
+				<br><br><br><br><br><br><br><br>
+				<br><br><br><br><br><br><br><br>
+				<br><br><br><br><br><br><br><br>
+				<hr>
+			</div>
+		</section>
+
+		<section>
+			<!--Contact Me-->
+			<div class="contact-me">
+				<h2 id="contact" class="anchor">CONTACT</h2>
+				<form>
+					<input name="name" type="text" class="feedback-input" placeholder="Name" />
+					<input name="email" type="text" class="feedback-input" placeholder="Email" />
+					<textarea name="text" class="feedback-input" placeholder="Message"></textarea>
+					<input type="submit" value="SUBMIT" />
+				</form>
+			</div>
+			<hr>
+		</section>
+
+
+
+	</div>
+
+
+	<section class="footer">
+		<div>
+			<i class="fab fa-linkedin-in"></i>
+			<span id="vertical-line">&#x7c</span>
+			<i class="fab fa-twitter"></i>
+		</div>
+
+		<p class="copyright"> Copyright &copy; 2019, Abdul Abubakar </p>
+		</div>
+	</section>
+
+
+	<!-- -----------SCRIPTS------------->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r71/three.min.js"></script>
+	<script src="js/projector.js"></script>
+	<script src="js/canvas-renderer.js"></script>
+	<script src="js/3d-lines-animation.js"></script>
+
+
+	<script>
+		// jQuery 
+
+		$(document).ready(function() {
+
+
+		});
+
+
+		// javaScript
+
+		// see my work button ////////////////
+
+		window.onscroll = function() {
+			scrollFunction()
+		};
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+				//				document.getElementById("btnSeeWork").style.display = "none";
+				document.getElementById("navbar").style.top = "0";
+			} else {
+				//				document.getElementById("btnSeeWork").style.display = "block";
+				document.getElementById("navbar").style.top = "-50px";
+			}
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+			document.body.scrollTop = 0; // For Safari
+			document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+		}
+
+		//////////////////////////////////////
+	</script>
+
+</body></html>

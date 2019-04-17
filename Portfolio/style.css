@@ -1,0 +1,239 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+@font-face {
+	font-family: Ubuntu-Bold;
+	src: url('../fonts/ubuntu/Ubuntu-Bold.ttf');
+}
+
+
+body {
+	background-color: #fcfcfc;
+	font-family: 'Open Sans', sans-serif;
+	color: #f2f2f2;
+}
+
+.my-info {
+	margin-bottom: 50px;
+}
+
+.anchor {
+	padding-top: 50px;
+	margin-top: -50px;
+}
+
+
+/**************[HOME]***************/
+
+#home {
+	cursor: pointer;
+	margin: 25%
+}
+
+#btnSeeWork {
+	z-index: 99;
+	background-color: #ac180b;
+	color: white;
+	cursor: pointer;
+	padding: 15px;
+	border-radius: 10px;
+	font-size: 17px;
+	text-decoration: none;
+}
+
+#btnSeeWork:hover {
+	background-color: #555;
+}
+
+
+/**************[3D LINES]***************/
+
+#canvas {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #1a1724;
+
+}
+
+div .canvas-wrap {
+	position: fixed;
+
+}
+
+.canvas-content {
+	position: relative;
+	z-index: 2000;
+	color: #fff;
+	text-align: center;
+	margin-bottom: 298px;
+	margin-top: 20%;
+}
+
+
+@media screen and (max-width: 992px) {
+	.canvas-content {
+		margin-top: 63%;
+		margin-bottom: 298px;
+	}
+
+}
+
+/**************[PROJECTS]***************/
+
+.projects-info {
+	text-align: center;
+	color: #282828;
+
+}
+
+/**************[CONTACT]***************/
+
+.contact-me {
+	text-align: center;
+	color: #282828;
+	margin-bottom: 50%;
+
+}
+
+#contact {
+	margin-top: 50px;
+}
+
+form {
+	max-width: 420px;
+	margin: 50px auto;
+}
+
+.feedback-input {
+	color: white;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: 500;
+	font-size: 18px;
+	border-radius: 5px;
+	line-height: 22px;
+	background-color: transparent;
+	border: 2px solid #282828;
+	transition: all 0.3s;
+	padding: 13px;
+	margin-bottom: 15px;
+	width: 100%;
+	box-sizing: border-box;
+	outline: 0;
+}
+
+.feedback-input:focus {
+	border: 2px solid #7a7a7a;
+}
+
+textarea {
+	height: 150px;
+	line-height: 150%;
+	resize: vertical;
+}
+
+[type="submit"] {
+	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+	width: 100%;
+	background-color: #282828;
+	color: #d1d1d1;
+	border-radius: 5px;
+	border: 0;
+	cursor: pointer;
+	font-size: 24px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	transition: all 0.3s;
+	margin-top: -4px;
+	font-weight: 700;
+}
+
+[type="submit"]:hover {
+	background-color: #d1d1d1;
+	color: #282828;
+
+
+
+}
+
+/*---------------------------------------------*/
+button {
+	outline: none !important;
+	border: none;
+	background: transparent;
+}
+
+/**************NAVBAR***************/
+
+
+#navbar {
+	background-color: #282828;
+	position: fixed;
+	top: -50px;
+	width: 100%;
+	z-index: 3000;
+	transition: top 0.5s;
+	text-align: center;
+	padding: 13px;
+
+}
+
+#navbar a {
+	justify-content: center;
+	color: #d1d1d1;
+	padding: 15px;
+	text-decoration: none;
+	margin: 20px;
+}
+
+#navbar a:hover {
+	background-color: #d1d1d1;
+	color: #282828;
+}
+
+/**************FOOTER***************/
+
+.footer {
+	margin-top: 40px;
+	background: #282828;
+	color: #d1d1d1;
+	padding: 40px;
+	text-align: center;
+	font-size: 23px;
+
+}
+
+#vertical-line {
+
+	/*	color: f22626;*/
+}
+
+.footer i {
+	margin: 15px;
+	padding: 6px;
+
+	/*	background-color: #f2f2f2;*/
+}
+
+
+.footer p {
+	font-size: 12px;
+	text-decoration: none;
+}
+
+.copyright {
+	/*	margin-bottom: -80px;
+	*/
+	text-align: center;
+	font-size: 15px;
+
+}
